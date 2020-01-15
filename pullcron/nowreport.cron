@@ -1,0 +1,18 @@
+#m h dmo mo dw 
+15 3 * * * /usr/bin/sh /data/pullcron/dailytraffics.sh
+30 3 * * * /usr/bin/sh /data/pullcron/dailyTopArticles.sh
+0 4 * * * /usr/bin/sh /data/pullcron/dailyTopNewsArticles.sh
+30 4 * * * /usr/bin/sh /data/pullcron/dailyTopPhotoArticles.sh
+0 5 * * * /usr/bin/sh /data/pullcron/dailyTopPushArticles.sh
+30 5 * * * /usr/bin/sh /data/pullcron/dailyTopCSArticles.sh
+30 6 * * * /usr/bin/sh /data/pullcron/dailyTopSNArticles.sh
+30 7 * * * /usr/bin/sh /data/pullcron/dailyTopIMArticles.sh
+0 0 1 * * /usr/bin/sh /data/pullcron/monthlytraffics.sh
+30 0 1 * * /usr/bin/sh /data/pullcron/monthlyTopArticles.sh
+0 1 1 * * /usr/bin/sh /data/pullcron/monthlyTopNewsArticles.sh
+30 1 1 * * /usr/bin/sh /data/pullcron/monthlyTopPhotoArticles.sh
+0 2 1 * * /usr/bin/sh /data/pullcron/monthlyTopPushArticles.sh
+30 2 1 * * /usr/bin/sh /data/pullcron/monthlyTopCSArticles.sh
+0 3 1 * * /usr/bin/sh /data/pullcron/monthlyTopSNArticles.sh
+30 3 1 * * /usr/bin/sh /data/pullcron/monthlyTopIMArticles.sh
+

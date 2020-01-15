@@ -1,0 +1,3887 @@
+/*--------------------------------------------------------------------------------*/
+/*RESPONSIVE BOX / ASPEC RATIO*/
+/*--------------------------------------------------------------------------------*/
+/* line 247, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.sidebar__profile-thumb img, .header__profile-thumb img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+/* line 253, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.header__profile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: initial;
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fontbase/proxima-nova-alt-reg.eot");
+  src: url("../fonts/fontbase/proxima-nova-alt-reg.eot?#iefix") format("embedded-opentype"), url("../fonts/fontbase/proxima-nova-alt-reg.woff2") format("woff2"), url("../fonts/fontbase/proxima-nova-alt-reg.woff") format("woff"), url("../fonts/fontbase/proxima-nova-alt-reg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/fontbase/proxima-nova-alt-bold.eot");
+  src: url("../fonts/fontbase/proxima-nova-alt-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/fontbase/proxima-nova-alt-bold.woff2") format("woff2"), url("../fonts/fontbase/proxima-nova-alt-bold.woff") format("woff"), url("../fonts/fontbase/proxima-nova-alt-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/fontbase/proxima-nova-alt-sbold.eot");
+  src: url("../fonts/fontbase/proxima-nova-alt-sbold.eot?#iefix") format("embedded-opentype"), url("../fonts/fontbase/proxima-nova-alt-sbold.woff2") format("woff2"), url("../fonts/fontbase/proxima-nova-alt-sbold.woff") format("woff"), url("../fonts/fontbase/proxima-nova-alt-sbold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/fontbase/proxima-nova-alt-black.eot");
+  src: url("../fonts/fontbase/proxima-nova-alt-black.eot?#iefix") format("embedded-opentype"), url("../fonts/fontbase/proxima-nova-alt-black.woff2") format("woff2"), url("../fonts/fontbase/proxima-nova-alt-black.woff") format("woff"), url("../fonts/fontbase/proxima-nova-alt-black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/fontbase/proxima-nova-alt-ebold.eot");
+  src: url("../fonts/fontbase/proxima-nova-alt-ebold.eot?#iefix") format("embedded-opentype"), url("../fonts/fontbase/proxima-nova-alt-ebold.woff2") format("woff2"), url("../fonts/fontbase/proxima-nova-alt-ebold.woff") format("woff"), url("../fonts/fontbase/proxima-nova-alt-ebold.ttf") format("truetype");
+}
+
+/* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/*-- our cleafix hack -- */
+/* line 7, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 16.66%;
+  /*-- our gutter -- */
+  padding: 12px;
+}
+
+/* line 23, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-1 {
+  width: 8.33%;
+}
+
+/* line 24, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-2 {
+  width: 16.66%;
+}
+
+/* line 25, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 26, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-4 {
+  width: 33.33%;
+}
+
+/* line 27, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-5 {
+  width: 41.66%;
+}
+
+/* line 28, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 29, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-7 {
+  width: 58.33%;
+}
+
+/* line 30, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-8 {
+  width: 66.66%;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 32, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-10 {
+  width: 83.33%;
+}
+
+/* line 33, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-11 {
+  width: 91.66%;
+}
+
+/* line 34, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.col-12 {
+  width: 100%;
+}
+
+/* line 36, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.outline, .outline * {
+  outline: 1px solid #F6A1A1;
+}
+
+/*-- some extra column content styling --*/
+/* line 41, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+[class*='col-'] > p {
+  background-color: #FFC2C2;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+/* line 50, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_grid.scss */
+.container-mid {
+  width: 1100px;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*GENERAL*/
+/*--------------------------------------------------------------------------------*/
+/* line 4, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Proxima Nova Alt',sans-serif;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+  color: #000;
+  position: relative;
+}
+
+/* line 20, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 23, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 229, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 234, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 37, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* line 42, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 45, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 48, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 51, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 54, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h5 {
+  font-size: 14px;
+}
+
+/* line 57, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+h6 {
+  font-size: 12px;
+}
+
+/* line 60, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+header, footer, table {
+  display: table;
+  width: 100%;
+}
+
+/* line 64, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+article {
+  position: relative;
+}
+
+/* line 68, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ratiobox_content iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 78, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+header, footer, .table {
+  display: table;
+  width: 100%;
+}
+
+/* line 84, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+ol, ul {
+  padding: 0 0 0 25px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 91, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+ol ol, ol ul, ul ol, ul ul {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+/* line 97, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+ol li, ul li {
+  padding: 5px 0;
+}
+
+/* line 103, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: top;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 112, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+a {
+  color: inherit;
+  vertical-align: top;
+  outline: 0;
+  transition: all .2s ease;
+  text-decoration: none;
+}
+
+/* line 119, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 126, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1100px;
+}
+
+/* line 131, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+@media (max-width: 1100px) {
+  /* line 126, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .container {
+    width: 100%;
+  }
+}
+
+/* line 142, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.wrapper {
+  margin: 0 0 0 300px;
+  padding: 0 20px 0 40px;
+}
+
+/* line 146, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.wrapper:before, .wrapper:after {
+  content: " ";
+  display: table;
+}
+
+@media (max-width: 1024px) {
+  /* line 142, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .wrapper {
+    margin: 0 0 0 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 142, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .wrapper {
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+
+/* line 163, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.bg-grey {
+  background: #f9f9f9;
+}
+
+/* line 167, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 171, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 175, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 180, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.float-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 187, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.lnsparator {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd10 {
+  padding: 10px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr10 {
+  padding-right: 10px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl10 {
+  padding-left: 10px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb10 {
+  padding-bottom: 10px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt10 {
+  padding-top: 10px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md10 {
+  margin: 10px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr10 {
+  margin-right: 10px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml10 {
+  margin-left: 10px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd20 {
+  padding: 20px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr20 {
+  padding-right: 20px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl20 {
+  padding-left: 20px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb20 {
+  padding-bottom: 20px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt20 {
+  padding-top: 20px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md20 {
+  margin: 20px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr20 {
+  margin-right: 20px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml20 {
+  margin-left: 20px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt20 {
+  margin-top: 20px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd30 {
+  padding: 30px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr30 {
+  padding-right: 30px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl30 {
+  padding-left: 30px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb30 {
+  padding-bottom: 30px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt30 {
+  padding-top: 30px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md30 {
+  margin: 30px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr30 {
+  margin-right: 30px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml30 {
+  margin-left: 30px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb30 {
+  margin-bottom: 30px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt30 {
+  margin-top: 30px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd40 {
+  padding: 40px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr40 {
+  padding-right: 40px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl40 {
+  padding-left: 40px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb40 {
+  padding-bottom: 40px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt40 {
+  padding-top: 40px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md40 {
+  margin: 40px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr40 {
+  margin-right: 40px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml40 {
+  margin-left: 40px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb40 {
+  margin-bottom: 40px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt40 {
+  margin-top: 40px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd50 {
+  padding: 50px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr50 {
+  padding-right: 50px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl50 {
+  padding-left: 50px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb50 {
+  padding-bottom: 50px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt50 {
+  padding-top: 50px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md50 {
+  margin: 50px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr50 {
+  margin-right: 50px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml50 {
+  margin-left: 50px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt50 {
+  margin-top: 50px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd60 {
+  padding: 60px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr60 {
+  padding-right: 60px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl60 {
+  padding-left: 60px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb60 {
+  padding-bottom: 60px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt60 {
+  padding-top: 60px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md60 {
+  margin: 60px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr60 {
+  margin-right: 60px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml60 {
+  margin-left: 60px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb60 {
+  margin-bottom: 60px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt60 {
+  margin-top: 60px;
+}
+
+/* line 196, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pd100 {
+  padding: 100px;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pr100 {
+  padding-right: 100px;
+}
+
+/* line 204, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pl100 {
+  padding-left: 100px;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pb100 {
+  padding-bottom: 100px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.pt100 {
+  padding-top: 100px;
+}
+
+/* line 216, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.md100 {
+  margin: 100px;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mr100 {
+  margin-right: 100px;
+}
+
+/* line 224, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.ml100 {
+  margin-left: 100px;
+}
+
+/* line 227, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mb100 {
+  margin-bottom: 100px;
+}
+
+/* line 231, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.mt100 {
+  margin-top: 100px;
+}
+
+/* line 236, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.d-csv {
+  position: relative;
+}
+
+/* line 240, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.d-csv:before {
+  content: "\e91e";
+  font-family: 'icomoon';
+  position: relative;
+  font-size: 16px;
+  vertical-align: inherit;
+  display: none;
+}
+
+/* line 249, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.d-csv:after {
+  content: "CSV";
+  margin-left: 5px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 256, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .d-csv span {
+    display: none;
+  }
+  /* line 259, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .d-csv:before, .d-csv:after {
+    display: inline-block;
+  }
+}
+
+/* line 267, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.onlymob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 267, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .onlymob {
+    display: block;
+  }
+}
+
+/* line 273, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.d-png {
+  position: relative;
+}
+
+/* line 277, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.d-png:before {
+  content: "\e91e";
+  font-family: 'icomoon';
+  position: relative;
+  font-size: 16px;
+  vertical-align: inherit;
+  display: none;
+}
+
+/* line 286, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.d-png:after {
+  content: "PNG";
+  margin-left: 5px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 293, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .d-png span {
+    display: none;
+  }
+  /* line 296, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .d-png:before, .d-png:after {
+    display: inline-block;
+  }
+}
+
+/* line 303, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.abs_right {
+  position: absolute;
+  right: 20px;
+}
+
+@media (max-width: 1024px) {
+  /* line 303, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .abs_right {
+    top: 0px;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 303, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .abs_right {
+    right: 0;
+  }
+  /* line 314, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .abs_right .btn {
+    display: inline-block;
+  }
+}
+
+/* line 321, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.white-space {
+  background: white;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px 30px;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  /* line 321, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+  .white-space {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 336, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* line 340, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_general.scss */
+.options-multi {
+  display: block;
+}
+
+/* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: max-height 0.1s ease-out;
+  -moz-transition: max-height 0.1s ease-out;
+  -ms-transition: max-height 0.1s ease-out;
+  -o-transition: max-height 0.1s ease-out;
+  transition: max-height 0.1s ease-out;
+  z-index: 800;
+}
+
+@media (max-width: 480px) {
+  /* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .dropmenu {
+    height: auto;
+    width: 100vw;
+    left: calc(-100vw - -55px);
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
+
+/* line 22, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__icon {
+  width: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* line 29, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__icon img {
+  width: 100%;
+}
+
+/* line 34, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__brand {
+  position: absolute;
+  width: 100%;
+  min-width: 250px;
+  top: 40px;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: max-height 0.1s ease-out;
+  -moz-transition: max-height 0.1s ease-out;
+  -ms-transition: max-height 0.1s ease-out;
+  -o-transition: max-height 0.1s ease-out;
+  transition: max-height 0.1s ease-out;
+}
+
+@media (max-width: 768px) {
+  /* line 34, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .dropmenu__brand {
+    top: 50px;
+    width: 100vw;
+    left: -20px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+  }
+}
+
+/* line 53, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__brand-link {
+  font-weight: 700;
+  display: block;
+  font-size: 16px;
+}
+
+/* line 60, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__brand.open {
+  -webkit-transition: max-height 0.6s ease-in;
+  -moz-transition: max-height 0.6s ease-in;
+  -ms-transition: max-height 0.6s ease-in;
+  -o-transition: max-height 0.6s ease-in;
+  transition: max-height 0.6s ease-in;
+  max-height: 3000px;
+  height: auto;
+}
+
+/* line 67, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu.open {
+  -webkit-transition: max-height 0.6s ease-in;
+  -moz-transition: max-height 0.6s ease-in;
+  -ms-transition: max-height 0.6s ease-in;
+  -o-transition: max-height 0.6s ease-in;
+  transition: max-height 0.6s ease-in;
+  max-height: 3000px;
+  height: auto;
+}
+
+/* line 73, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__box {
+  position: relative;
+  background: white;
+  padding: 5px 10px;
+  min-width: 175px;
+}
+
+/* line 82, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__item {
+  border-bottom: 1px solid #f0f0f0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 86, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__item:last-child, .dropmenu__item:hover {
+  border-color: transparent;
+}
+
+/* line 91, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__item:hover a {
+  background: #f0f0f0;
+}
+
+/* line 96, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.dropmenu__item a {
+  margin: 10px 0 10px 0;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 107, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  background: white;
+  height: 100%;
+  min-height: 100vh;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 116, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__head {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  /* line 116, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .sidebar__head {
+    display: none;
+  }
+}
+
+/* line 125, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__logo {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 0.8em;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  display: block;
+}
+
+/* line 134, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__chanel {
+  display: block;
+  padding: 20px 0;
+}
+
+/* line 137, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__chanel img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+/* line 142, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__chanel span {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #979797;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  /* line 107, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .sidebar {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 107, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .sidebar {
+    width: 100%;
+    z-index: 9999;
+    margin-top: 55px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    position: fixed;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    overflow: scroll;
+    padding-bottom: 45px;
+  }
+  /* line 168, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .sidebar.open {
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+}
+
+/* line 175, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__profile {
+  background: #f0f0f0;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 10px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 175, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .sidebar__profile {
+    display: block;
+  }
+}
+
+/* line 187, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__profile-thumb {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 195, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__profile-name {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 30px;
+  position: relative;
+  text-align: right;
+}
+
+/* line 208, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__profile-menu {
+  padding: 20px 0 0px 0;
+  margin: 0 5px;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__profile-menu a {
+  color: #4a4a4a;
+  display: inline-block;
+  padding: 0 11px 0 0;
+  font-size: 14px;
+  margin: 0 5px 0 0;
+  border-right: 1px solid #4a4a4a;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.sidebar__profile-menu a:last-child {
+  border-right: 0;
+}
+
+/* line 229, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu {
+  color: #4a4a4a;
+  background: white;
+  max-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  /* line 229, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .menu {
+    max-height: unset;
+    overflow: scroll;
+  }
+}
+
+/* line 243, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* line 247, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 251, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0.3px solid slategrey;
+}
+
+/* line 260, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu:hover .menu__item.active:before {
+  left: -20px;
+}
+
+/* line 267, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__item {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* line 275, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link {
+  display: block;
+  padding: 20px 20px 20px 30px;
+  font-size: 18px;
+  font-weight: 800;
+  position: relative;
+}
+
+/* line 282, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link:before {
+  content: "";
+  left: -20px;
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #ffbe02;
+  top: 50%;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-box-shadow: 0 0 8px 0 #ffbe02;
+  -moz-box-shadow: 0 0 8px 0 #ffbe02;
+  -o-box-shadow: 0 0 8px 0 #ffbe02;
+  -ms-box-shadow: 0 0 8px 0 #ffbe02;
+  box-shadow: 0 0 8px 0 #ffbe02;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+/* line 305, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link.active:before, .menu__link:hover:before {
+  left: 0px;
+}
+
+/* line 314, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link.active:hover:before {
+  left: 0px !important;
+}
+
+/* line 325, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link.dishover:hover:before {
+  left: -20px !important;
+}
+
+/* line 337, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link.dropdown.open:after {
+  position: absolute;
+  content: "\e911";
+}
+
+/* line 343, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__link.dropdown:after {
+  position: absolute;
+  content: "\e914";
+  font-family: "icomoon";
+  font-size: 25px;
+  right: 10px;
+  top: 20px;
+  font-weight: normal;
+}
+
+/* line 356, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop {
+  list-style-type: none;
+  padding: 0 20px 0 30px;
+  margin-top: 0;
+  display: none;
+}
+
+/* line 362, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop.open {
+  display: block;
+}
+
+/* line 365, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop.open ul {
+  display: block;
+}
+
+/* line 372, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop-item a {
+  font-size: 16px;
+  padding: 5px 20px 5px 0px;
+  display: block;
+  font-weight: 600;
+  position: relative;
+}
+
+/* line 381, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop-item a:before {
+  content: "";
+  left: -45px;
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #ffbe02;
+  top: 50%;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-box-shadow: 0 0 8px 0 #ffbe02;
+  -moz-box-shadow: 0 0 8px 0 #ffbe02;
+  -o-box-shadow: 0 0 8px 0 #ffbe02;
+  -ms-box-shadow: 0 0 8px 0 #ffbe02;
+  box-shadow: 0 0 8px 0 #ffbe02;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+/* line 404, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop-item a.active:before, .menu__drop-item a:hover:before {
+  left: -30px;
+}
+
+/* line 413, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop-item a.active:hover:before {
+  left: -30px !important;
+}
+
+/* line 424, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop-item a.dishover:hover:before {
+  left: -45px !important;
+}
+
+/* line 433, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop ul {
+  padding-left: 10px;
+}
+
+/* line 436, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop ul li a {
+  color: #979797;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  padding-left: 15px;
+}
+
+/* line 442, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop ul li a:hover, .menu__drop ul li a.active {
+  background: #f0f0f0;
+}
+
+/* line 446, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.menu__drop ul li a:before {
+  display: none;
+}
+
+/* line 457, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu {
+  margin: 0 auto;
+  width: 20px;
+  display: block;
+  transition: all .3s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: none;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+@media (max-width: 768px) {
+  /* line 457, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+  .burger-menu {
+    display: block;
+  }
+}
+
+/* line 474, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu .bar {
+  transition: all .3s;
+  height: 2px;
+  width: 100%;
+  display: block;
+  background-color: #000;
+  float: right;
+}
+
+/* line 482, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu .bar:nth-of-type(2) {
+  margin: 5px 0;
+  width: 75%;
+  transition-property: margin, height, width;
+}
+
+/* line 490, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu:hover .bar:nth-of-type(2) {
+  width: 100%;
+}
+
+/* line 493, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu:hover .bar:nth-of-type(3) {
+  width: 100%;
+}
+
+/* line 504, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu.open .bar:nth-of-type(1) {
+  transform: rotate(45deg);
+  height: 3px;
+  margin-top: 2px;
+}
+
+/* line 510, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu.open .bar:nth-of-type(2) {
+  opacity: 0;
+  height: 0;
+  margin: 0 -6px;
+}
+
+/* line 516, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_menu.scss */
+.burger-menu.open .bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  height: 3px;
+  margin-top: -3px;
+}
+
+/* line 2, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 2, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title {
+    margin-top: 60px;
+  }
+}
+
+/* line 12, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__main {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 12, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__main {
+    font-size: 28px;
+  }
+}
+
+/* line 22, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__main.diline {
+  display: inline-block;
+}
+
+/* line 26, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__main small {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  /* line 26, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__main small {
+    font-size: 28px;
+  }
+}
+
+/* line 36, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__cap {
+  font-size: 16px;
+  width: 60%;
+  line-height: 1.4em;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  /* line 36, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__cap {
+    width: 100%;
+  }
+}
+
+/* line 47, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__section {
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  /* line 47, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__section {
+    font-size: 22px;
+  }
+}
+
+/* line 57, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__section small {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  /* line 57, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__section small {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  /* line 57, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__section small {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 47, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__section {
+    padding-top: 10px;
+  }
+}
+
+/* line 77, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__sub {
+  font-size: 18px;
+  font-weight: bold;
+  color: #979797;
+}
+
+/* line 83, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__float {
+  position: relative;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 93, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__icon {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+/* line 97, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+.title__icon-float {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+@media (max-width: 768px) {
+  /* line 97, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_title.scss */
+  .title__icon-float {
+    left: -10px;
+    font-size: 15px;
+  }
+}
+
+/* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card {
+  padding: 20px;
+  min-width: 350px;
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  /* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+  .card {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin-bottom: 20px;
+    min-width: unset;
+  }
+}
+
+/* line 15, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__box {
+  padding: 25px;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  /* line 15, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+  .card__box {
+    padding: 15px;
+  }
+}
+
+/* line 26, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__list {
+  margin: 20px -20px;
+}
+
+@media (max-width: 768px) {
+  /* line 26, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+  .card__list {
+    margin: 20px 0;
+  }
+}
+
+/* line 34, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__top {
+  padding: 0 0 30px 0;
+  position: relative;
+  color: #979797;
+}
+
+/* line 40, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__day {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 45, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__date {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+/* line 53, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__counter {
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 58, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__counter:last-child {
+  margin-bottom: 0;
+}
+
+/* line 62, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__counter span {
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* line 53, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+  .card__counter {
+    font-size: 35px;
+  }
+}
+
+/* line 73, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  padding: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* line 81, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__icon span {
+  font-size: 35px;
+}
+
+/* line 85, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__icon.danger {
+  background: #d0021b !important;
+}
+
+/* line 90, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__numb {
+  position: absolute;
+  right: -25px;
+  top: 60%;
+  font-weight: 700;
+  font-size: 25px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border-right: 5px solid;
+  padding: 8px;
+  padding-right: 10px;
+}
+
+/* line 101, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__numb.danger {
+  color: #d0021b;
+  border-color: #d0021b;
+}
+
+/* line 106, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+.card__numb.info {
+  color: #5fb100;
+  border-color: #5fb100;
+}
+
+@media (max-width: 768px) {
+  /* line 90, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_card.scss */
+  .card__numb {
+    right: -15px;
+    font-size: 18px;
+  }
+}
+
+/* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdinput {
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  min-width: 230px;
+  background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media (max-width: 768px) {
+  /* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .rdinput {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* line 21, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdselect {
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  min-width: 230px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: white;
+  padding-right: 50px;
+  -moz-appearance: none;
+}
+
+@media (max-width: 768px) {
+  /* line 21, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .rdselect {
+    margin-bottom: 10px;
+  }
+}
+
+/* line 39, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop {
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  min-width: 200px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: white;
+  padding-right: 50px;
+  position: relative;
+  cursor: pointer;
+  font-weight: normal;
+  color: initial;
+  -moz-appearance: none;
+}
+
+@media (max-width: 768px) {
+  /* line 39, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .rdrop {
+    margin-bottom: 10px;
+  }
+}
+
+/* line 60, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__opt {
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  width: 93%;
+  z-index: 1000;
+  border: 1px solid #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  /* line 60, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .rdrop__opt {
+    width: 100%;
+  }
+}
+
+/* line 75, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__count {
+  position: absolute;
+  right: 50px;
+  font-weight: 400;
+}
+
+/* line 81, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__act {
+  left: 20px;
+  top: 55px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 93, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__act.open {
+  height: auto;
+  max-height: 1500px;
+}
+
+@media (max-width: 768px) {
+  /* line 81, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .rdrop__act {
+    left: 0;
+  }
+}
+
+/* line 102, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__check {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+/* line 110, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__item-title {
+  display: block;
+}
+
+/* line 114, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 0;
+  font-weight: 700;
+}
+
+/* line 124, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__item label input:checked + span.checkmark {
+  color: #5fb100;
+}
+
+/* line 130, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__item label .checkmark {
+  right: 0;
+  top: 10;
+  color: #e5e5e5;
+  position: absolute;
+  font-size: 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 141, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.rdrop__title {
+  font-size: 14px;
+  color: #a1a1a1;
+  padding-bottom: 10px;
+}
+
+/* line 148, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop {
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  min-width: 200px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: white;
+  padding-right: 50px;
+  position: relative;
+  cursor: pointer;
+  font-weight: normal;
+  color: initial;
+  -moz-appearance: none;
+}
+
+/* line 165, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__opt {
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  width: 93%;
+  z-index: 1000;
+  border: 1px solid #e5e5e5;
+  padding: 10px 0;
+}
+
+/* line 176, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__item {
+  padding: 0px 20px;
+}
+
+/* line 179, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__item:hover {
+  background: #f0f0f0;
+}
+
+/* line 184, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__count {
+  position: absolute;
+  right: 50px;
+  font-weight: 400;
+}
+
+/* line 190, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__act {
+  left: 20px;
+  top: 55px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__act.open {
+  height: auto;
+  max-height: 500px;
+}
+
+/* line 206, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__check {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+/* line 214, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__item-title {
+  display: block;
+}
+
+/* line 218, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 0;
+  font-weight: 700;
+}
+
+/* line 228, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__item label input:checked + span.checkmark {
+  color: #5fb100;
+}
+
+/* line 234, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__item label .checkmark {
+  right: 0;
+  top: 10;
+  color: #e5e5e5;
+  position: absolute;
+  font-size: 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 245, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.sdrop__title {
+  font-size: 14px;
+  color: #a1a1a1;
+  padding-bottom: 10px;
+}
+
+/* line 255, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__inline {
+  margin: 0 -5px;
+  width: 100%;
+}
+
+/* line 258, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__inline-item {
+  float: left;
+  padding: 5px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 258, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .form__inline-item {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+/* line 272, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__wrap {
+  position: relative;
+  display: block;
+  padding: 5px 0;
+}
+
+/* line 278, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__block {
+  margin: 0 -5px;
+  width: 100%;
+}
+
+/* line 282, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__block.form__block--half {
+  width: 50%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  /* line 282, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+  .form__block.form__block--half {
+    width: 100%;
+  }
+}
+
+/* line 291, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__block-item {
+  display: block;
+  padding: 5px;
+  margin-bottom: 20px;
+  float: none;
+  position: relative;
+}
+
+/* line 299, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__block-label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* line 308, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__icon {
+  position: absolute;
+  font-size: 30px;
+  color: #979797;
+  top: 9px;
+  left: 10px;
+}
+
+/* line 315, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__icon.onright {
+  left: initial;
+  right: 10px;
+}
+
+/* line 322, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* line 329, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical.onchild {
+  padding-left: 40px;
+}
+
+/* line 330, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical.onchild:last-child {
+  margin-bottom: 0;
+}
+
+/* line 334, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical.onchild .form__vertical-title {
+  position: absolute;
+  width: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  overflow: hidden;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 346, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical.onchild .form__vertical-box {
+  padding-left: calc(70px);
+  width: 100%;
+}
+
+/* line 353, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical.onhalf {
+  width: 50%;
+  max-width: 800px;
+}
+
+/* line 358, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical-title {
+  position: absolute;
+  width: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  overflow: hidden;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 370, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical-box {
+  padding-left: calc(100px);
+  width: 100%;
+}
+
+/* line 376, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.form__vertical label {
+  font-size: 13px;
+  display: block;
+  color: #979797;
+  position: absolute;
+  top: -10px;
+}
+
+/* line 390, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.df__input {
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  -o-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  -ms-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  font-size: 14px;
+  background: white;
+  width: 100%;
+  font-weight: 700;
+}
+
+/* line 214, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.df__input::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+/* line 217, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.df__input:-moz-placeholder {
+  color: #d6d6d6;
+}
+
+/* line 220, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.df__input::-moz-placeholder {
+  color: #d6d6d6;
+}
+
+/* line 223, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_mixins.scss */
+.df__input:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+/* line 405, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.df__input.iconic {
+  padding-left: 45px;
+}
+
+/* line 409, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.df__select {
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  -o-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  -ms-box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  box-shadow: 0px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  font-size: 14px;
+  background: white;
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #979797;
+}
+
+/* line 424, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_input.scss */
+.df__select.iconic {
+  padding-left: 45px;
+}
+
+/* line 1, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  background: #e5e5e5;
+  color: #979797;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 14, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-full {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* line 21, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-long {
+  padding: 10px 55px;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-danger {
+  background: #ea7a7a;
+  color: white;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-warning {
+  background: #ffc20f;
+  color: white;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-info {
+  background: #5fb100;
+  color: white;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-primary {
+  background: #4a90e2;
+  color: white;
+}
+
+/* line 31, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_btn.scss */
+.btn.btn-primary-alt {
+  background: #14bbd0;
+  color: white;
+}
+
+/* line 3, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__box {
+  padding-top: 30px;
+  margin: 0px -30px;
+}
+
+@media (max-width: 768px) {
+  /* line 3, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+  .table__box {
+    overflow: scroll;
+    margin: 0px -15px;
+  }
+}
+
+/* line 13, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__box.table-fluid {
+  margin: -40px -30px -5px -30px;
+}
+
+/* line 16, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__box.table-fluid table {
+  border: none;
+}
+
+/* line 19, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__box.table-fluid table tr th {
+  border: none;
+}
+
+/* line 28, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default {
+  border-top: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 35, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead tr {
+  background: #f9f9f9;
+}
+
+/* line 42, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* line 48, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default td, .table-default th {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  padding: 25px 15px;
+}
+
+@media (max-width: 768px) {
+  /* line 48, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+  .table-default td, .table-default th {
+    min-width: 170px !important;
+  }
+}
+
+/* line 59, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default td:first-child, .table-default th:first-child {
+  padding-left: 35px;
+}
+
+/* line 63, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default td:last-child, .table-default th:last-child {
+  padding-right: 35px;
+}
+
+/* line 68, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default td a:hover, .table-default th a:hover {
+  text-decoration: underline;
+}
+
+/* line 76, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default tr:last-child td {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 83, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead th {
+  text-align: left;
+  cursor: pointer;
+}
+
+/* line 89, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th {
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 94, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th span {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 98, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th span:before {
+  position: absolute;
+  content: "\e915";
+  font-family: "icomoon";
+  font-size: 20px;
+  color: #ffc20f;
+  right: -30px;
+  top: -6px;
+}
+
+/* line 108, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th span:after {
+  position: absolute;
+  content: "\e916";
+  font-family: "icomoon";
+  font-size: 20px;
+  color: #ffc20f;
+  right: -30px;
+  top: 1px;
+}
+
+/* line 121, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th.sorter-false span:before, .table-default thead.sorter th.sorter-false span:after {
+  display: none;
+}
+
+/* line 129, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th.tablesorter-headerAsc span:after {
+  opacity: 0.3;
+}
+
+/* line 137, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table-default thead.sorter th.tablesorter-headerDesc span:before {
+  opacity: 0.3;
+}
+
+/* line 148, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate {
+  position: relative;
+  padding: 20px 30px;
+}
+
+/* line 152, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate-show {
+  color: #979797;
+}
+
+/* line 156, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate-item {
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 12px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 165, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate-item.active, .table__paginate-item:hover {
+  background: #ffc20f;
+  color: white;
+}
+
+/* line 170, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate-item.onwide {
+  width: auto;
+}
+
+/* line 172, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate-item.onwide.active, .table__paginate-item.onwide:hover {
+  background: transparent;
+  color: initial;
+}
+
+/* line 179, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+.table__paginate-list {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 179, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/assets/_table.scss */
+  .table__paginate-list {
+    position: relative;
+    text-align: left;
+    left: 0;
+    right: unset;
+    margin-left: -5px;
+  }
+}
+
+/* line 3, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header {
+  padding: 30px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 3, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header {
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 60px;
+  }
+}
+
+/* line 22, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__index {
+  width: 65px;
+  overflow: hidden;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 900;
+  padding-left: 10px;
+  line-height: 15px;
+  float: left;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 22, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__index {
+    display: block;
+  }
+}
+
+/* line 37, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__brand {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  /* line 37, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__brand {
+    padding-right: 10px;
+    border-right: 1px solid #f0f0f0;
+  }
+}
+
+/* line 52, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__brand-unit {
+  cursor: pointer;
+  font-weight: 700;
+  display: block;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  /* line 52, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__brand-unit {
+    display: none;
+  }
+}
+
+/* line 64, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__brand-mobile {
+  display: none;
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  /* line 64, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__brand-mobile {
+    display: inline-block;
+    float: left;
+  }
+}
+
+/* line 71, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__brand-mobile img {
+  width: 100%;
+}
+
+/* line 77, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__brand:after {
+  font-family: "icomoon";
+  content: "\e912";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 1em;
+  color: #979797;
+}
+
+@media (max-width: 768px) {
+  /* line 77, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__brand:after {
+    display: none;
+  }
+}
+
+/* line 94, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__brand-section {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  font-weight: 600;
+  min-width: 100px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1em;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 94, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__brand-section {
+    display: block;
+  }
+}
+
+/* line 113, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__profile {
+  cursor: pointer;
+  top: -5px;
+}
+
+@media (max-width: 768px) {
+  /* line 113, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__profile {
+    display: none;
+  }
+}
+
+/* line 123, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__profile-thumb {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 131, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__profile-name {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 14px;
+  padding-right: 30px;
+  position: relative;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  /* line 131, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .header__profile-name {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+/* line 148, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__profile-name:after {
+  font-family: "icomoon";
+  content: "\e914";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 25px;
+  line-height: 1em;
+  color: #979797;
+}
+
+/* line 164, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.header__bar {
+  position: relative;
+}
+
+/* line 174, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.m-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* line 181, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt {
+  margin-top: 30vh;
+}
+
+@media (max-width: 768px) {
+  /* line 181, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .homeopt {
+    margin-top: 5vh;
+    padding-top: 60px;
+  }
+}
+
+/* line 192, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__list {
+  padding: 40px 0;
+  margin: 0 -10px;
+  text-align: center;
+}
+
+/* line 200, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__box {
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 206, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__box:hover {
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__item {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 216px;
+  height: 216px;
+}
+
+@media (max-width: 1100px) {
+  /* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .homeopt__item {
+    width: 24.33%;
+    height: 216px;
+    float: none;
+    display: inline-block;
+    top: 0;
+    position: relative;
+    vertical-align: bottom;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .homeopt__item {
+    width: 33%;
+  }
+}
+
+@media (max-width: 650px) {
+  /* line 212, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .homeopt__item {
+    width: 45%;
+    height: 145px;
+  }
+}
+
+/* line 243, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__item a {
+  padding: 15px;
+  display: block;
+  height: 100%;
+}
+
+/* line 251, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__item a:hover .homeopt__icon img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* line 259, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__title {
+  font-weight: 600;
+  display: block;
+  font-size: 16px;
+}
+
+@media (max-width: 650px) {
+  /* line 259, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .homeopt__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* line 259, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .homeopt__title {
+    font-size: 11px;
+  }
+}
+
+/* line 273, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__icon {
+  display: block;
+  height: 75%;
+  overflow: hidden;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+/* line 280, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.homeopt__icon img {
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  height: 100%;
+}
+
+/* line 291, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.content {
+  color: #4a4a4a;
+  width: 100%;
+}
+
+/* line 303, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.section__head {
+  position: relative;
+}
+
+/* line 306, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.section__head-link {
+  font-size: 16px;
+  letter-spacing: 0.23em;
+  color: #10345d;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+@media (max-width: 768px) {
+  /* line 306, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .section__head-link {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+/* line 322, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.section__box {
+  padding-top: 40px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* line 328, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.section__box:last-child {
+  margin-bottom: 0;
+}
+
+/* line 337, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__date {
+  float: left;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 337, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__date {
+    padding-left: 0;
+    float: none;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 336, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter {
+    position: relative;
+  }
+}
+
+/* line 357, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__dots {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #ffc20f;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: white;
+  overflow: hidden;
+  left: 0;
+  position: relative;
+  z-index: 99;
+  -webkit-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 357, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__dots {
+    display: block;
+  }
+}
+
+/* line 380, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__dots span {
+  vertical-align: middle;
+}
+
+/* line 385, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__chanel {
+  float: left;
+  padding-left: 10px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 385, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__chanel {
+    padding-left: 0;
+    float: none;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 398, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__chanel .icon-select {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  right: 10px;
+}
+
+/* line 403, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__chanel .icon-select span {
+  font-size: 25px;
+}
+
+/* line 412, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__menu {
+  padding: 10px;
+  background: #fff;
+  margin-top: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  /* line 412, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu {
+    position: absolute;
+    z-index: 98;
+    margin-top: -25px;
+    padding-top: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: height 10s ease;
+    -moz-transition: height 10s ease;
+    -ms-transition: height 10s ease;
+    -o-transition: height 10s ease;
+    transition: height 10s ease;
+    height: 0;
+    padding: 0;
+  }
+  /* line 436, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu.open {
+    height: auto;
+    max-height: 1000px;
+    padding: 20px;
+    padding-top: 50px;
+  }
+}
+
+/* line 449, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__menu-item {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  /* line 449, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu-item {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 449, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu-item {
+    display: block;
+  }
+}
+
+/* line 462, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__menu-item a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* line 472, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__menu-item a:hover, .filter__menu-item a.active {
+  background: #ffc20f;
+}
+
+@media (max-width: 768px) {
+  /* line 472, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu-item a:hover, .filter__menu-item a.active {
+    color: white;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 462, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu-item a {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 462, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__menu-item a {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+/* line 494, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__menu.ontable {
+  display: inline-block;
+}
+
+/* line 502, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__menu.ontable .filter__menu-item a:hover, .filter__menu.ontable .filter__menu-item a.active {
+  background: #b8e986;
+}
+
+/* line 513, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__tab {
+  padding: 20px 0;
+  text-align: center;
+  color: #979797;
+}
+
+/* line 518, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__tab-list {
+  padding-top: 20px;
+}
+
+/* line 522, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__tab-item {
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 10px;
+  border-right: 1px solid #979797;
+}
+
+/* line 525, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__tab-item a {
+  font-size: 22px;
+  display: block;
+}
+
+/* line 529, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__tab-item a.active, .filter__tab-item a:hover {
+  color: #ffc20f;
+}
+
+/* line 539, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__tab-item:last-child {
+  border: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* line 549, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__options--right {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+/* line 556, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.filter__wrap {
+  position: relative;
+  min-height: 110px;
+}
+
+@media (max-width: 768px) {
+  /* line 556, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .filter__wrap {
+    min-height: 0;
+  }
+}
+
+/* line 569, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.text-danger {
+  color: #ea7a7a;
+}
+
+/* line 575, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.card__icon.danger {
+  background: #ea7a7a;
+}
+
+/* line 569, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.text-warning {
+  color: #FF9F00;
+}
+
+/* line 575, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.card__icon.warning {
+  background: #FF9F00;
+}
+
+/* line 569, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.text-info {
+  color: #5fb100;
+}
+
+/* line 575, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.card__icon.info {
+  background: #5fb100;
+}
+
+/* line 569, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.text-primary {
+  color: #4a90e2;
+}
+
+/* line 575, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.card__icon.primary {
+  background: #4a90e2;
+}
+
+/* line 584, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.chart {
+  padding-top: 40px;
+}
+
+/* line 588, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.chart__box {
+  margin-bottom: 50px;
+}
+
+/* line 594, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 594, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage {
+    width: auto;
+    margin: 0 -20px;
+    overflow: visible;
+  }
+}
+
+/* line 607, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__wrap {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  /* line 607, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__wrap {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: translate(0);
+    padding: 0;
+    position: relative;
+  }
+}
+
+/* line 626, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__bg {
+  background: url(../images/bg-login.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 50%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 626, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__bg {
+    width: 100%;
+  }
+}
+
+/* line 644, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage .white-space {
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  /* line 644, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage .white-space {
+    margin-top: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    min-height: 100vh;
+    padding-top: 60px;
+    overflow: visible;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 644, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage .white-space {
+    padding-top: 0px;
+  }
+}
+
+/* line 661, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__brand {
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+  line-height: 1em;
+}
+
+@media (max-width: 768px) {
+  /* line 661, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__brand {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 661, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__brand {
+    margin-bottom: 0;
+  }
+}
+
+/* line 676, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__box {
+  padding: 50px;
+  width: 50%;
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 676, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__box {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 400px;
+    padding: 20px 20px;
+  }
+}
+
+/* line 695, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__bold {
+  font-weight: 900;
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  /* line 695, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__bold {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+/* line 705, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form {
+  padding-top: 30px;
+}
+
+/* line 708, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* line 712, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-item label {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  color: #979797;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* line 712, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__form-item label {
+    color: white;
+  }
+}
+
+/* line 723, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-item label.stayed {
+  top: -7px;
+  font-size: 11px;
+}
+
+/* line 730, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-item.red .authpage__form-icon {
+  color: #ea7a7a;
+}
+
+/* line 733, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-item.red .authpage__input {
+  border-color: #ea7a7a;
+}
+
+/* line 739, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-icon {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 27px;
+}
+
+@media (max-width: 768px) {
+  /* line 739, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__form-icon {
+    color: white;
+  }
+}
+
+/* line 747, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-icon.onleft {
+  right: 0;
+  left: initial;
+  color: black !important;
+}
+
+@media (max-width: 768px) {
+  /* line 747, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__form-icon.onleft {
+    color: white !important;
+  }
+}
+
+/* line 757, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-icon .cross {
+  display: block;
+  position: relative;
+}
+
+/* line 760, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__form-icon .cross:after {
+  content: "";
+  left: 12px;
+  top: -1px;
+  width: 2px;
+  height: 30px;
+  background: #ea7a7a;
+  z-index: 10;
+  position: absolute;
+  transform: rotate(50deg);
+}
+
+/* line 776, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__error {
+  padding: 15px 10px;
+  color: white;
+  background: #ea7a7a;
+  margin-top: -20px;
+}
+
+/* line 783, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__btn {
+  background: #00377b;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: .2em;
+  margin: 30px 0;
+  padding: 15px 40px;
+}
+
+/* line 792, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__btn-connect {
+  margin-top: 10px;
+  position: relative;
+  padding: 15px 40px;
+  padding-left: 45px;
+}
+
+/* line 803, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__connect > span {
+  display: block;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 803, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__connect > span {
+    color: white;
+  }
+}
+
+/* line 813, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__connect-icon {
+  position: absolute;
+  width: 26px;
+  top: 10px;
+  left: 10px;
+}
+
+/* line 822, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__input {
+  outline: none;
+  border: none;
+  padding: 10px 20px 10px 40px;
+  font-size: 14px;
+  border-bottom: 1px solid #b1b1b1;
+  width: 100%;
+}
+
+/* line 831, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.authpage__input:focus + label {
+  top: -7px;
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  /* line 822, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .authpage__input {
+    background: transparent;
+    color: white;
+  }
+}
+
+/* line 844, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.tabmenu {
+  padding: 30px 0 0 0;
+  margin-bottom: -20px;
+}
+
+/* line 847, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.tabmenu__inline {
+  float: left;
+  font-size: 16px;
+  margin-right: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 847, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .tabmenu__inline {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 860, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.tabmenu__inline:after {
+  content: "";
+  height: 15px;
+  width: 1px;
+  right: 0;
+  top: 0;
+  background: #4a4a4a;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+/* line 874, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.tabmenu__inline:last-child:after {
+  display: none;
+}
+
+/* line 879, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.tabmenu__inline a {
+  display: block;
+}
+
+/* line 882, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.tabmenu__inline a > span {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+/* line 891, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.preview-pop {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  background: black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  line-height: 45px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  /* line 891, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .preview-pop {
+    margin-left: 0;
+    margin-bottom: 10px;
+    right: 0;
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+/* line 916, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10vh 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  /* line 916, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .popshow {
+    padding: 20px;
+  }
+}
+
+/* line 933, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow.open {
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 937, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow.open .popshow__box {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 944, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow__box {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  width: 900px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-10vh);
+  -moz-transform: translateY(-10vh);
+  -ms-transform: translateY(-10vh);
+  -o-transform: translateY(-10vh);
+  transform: translateY(-10vh);
+}
+
+@media (max-width: 900px) {
+  /* line 944, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .popshow__box {
+    width: 100%;
+  }
+}
+
+/* line 957, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow__title {
+  padding: 45px 45px 10px 45px;
+  background: url(../images/bg-pop.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  /* line 957, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .popshow__title {
+    padding: 20px 10px;
+    font-size: 20px;
+  }
+}
+
+/* line 969, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow__content {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+/* line 973, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow__content ol {
+  list-style: none;
+}
+
+@media (max-width: 900px) {
+  /* line 973, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .popshow__content ol {
+    padding-left: 0;
+  }
+}
+
+/* line 981, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow__content li {
+  counter-increment: item;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  /* line 981, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .popshow__content li {
+    font-size: 18px;
+    display: block;
+    padding-left: 0;
+    padding-top: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+/* line 995, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+.popshow__content li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #5fb100;
+  border-radius: 100%;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 900px) {
+  /* line 995, /Volumes/1TB MacHD/work/local/design/d2018/cms/now_report/scss/_content.scss */
+  .popshow__content li:before {
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=../css/nowreport_style.map */

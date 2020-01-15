@@ -1,0 +1,16 @@
+{
+    "name": "Ga",
+    "alias": "ga",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Ga\\Providers\\GaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

@@ -1,0 +1,299 @@
+//--------------------------------------------------------------------------------
+//WEBKIT TOOLS
+//--------------------------------------------------------------------------------
+@mixin rounded-corner($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin blur-radius($radius) {
+  -webkit-filter: blur($radius);
+     -moz-filter: blur($radius);
+       -o-filter: blur($radius);
+      -ms-filter: blur($radius);
+          filter: blur($radius);
+}
+@mixin box-shadow($args...) {
+  -webkit-box-shadow: $args;
+     -moz-box-shadow: $args;
+       -o-box-shadow: $args;
+      -ms-box-shadow: $args;
+          box-shadow: $args;
+}
+@mixin text-shadow($args...) {
+  -webkit-text-shadow: $args;
+     -moz-text-shadow: $args;
+       -o-text-shadow: $args;
+      -ms-text-shadow: $args;
+          text-shadow: $args;
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+      -ms-transition: $args;
+       -o-transition: $args;
+          transition: $args;
+}
+@mixin transform($args...) {
+  -webkit-transform: $args;
+     -moz-transform: $args;
+      -ms-transform: $args;
+       -o-transform: $args;
+          transform: $args;
+}
+@mixin transform-origin($args...) {
+  -webkit-transform-origin: $args;
+     -moz-transform-origin: $args;
+      -ms-transform-origin: $args;
+       -o-transform-origin: $args;
+          transform-origin: $args;
+}
+@mixin animation($args...) {
+  -webkit-animation: $args;
+     -moz-animation: $args;
+      -ms-animation: $args;
+       -o-animation: $args;
+          animation: $args;
+}
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+//--------------------------------------------------------------------------------
+//BACKGROUND, OPACITY, AND GRADIENTS
+//--------------------------------------------------------------------------------
+@mixin linear-gradient($start_color:#ffffff, $opacity_start: 0, $pos_start: 0%, $end_color:#000000, $opacity_end: 1, $pos_end: 100%, $direction_start: top, $direction_end: bottom) {
+  background: $start_color; /* Old browsers */
+  background: -moz-linear-gradient($direction_start,  rgba($start_color, $opacity_start) $pos_start, rgba($end_color, $opacity_end) $pos_end); /* FF3.6+ */
+  background: -webkit-linear-gradient($direction_start,  rgba($start_color, $opacity_start) $pos_start, rgba($end_color, $opacity_end) $pos_end); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to $direction_end,  rgba($start_color, $opacity_start) $pos_start, rgba($end_color, $opacity_end) $pos_end); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start_color', endColorstr='$end_color',GradientType=1 ); /* IE6-9 */
+}
+@mixin radial-gradient($pos_x: center, $pos_y: center, $top_color:#ffffff, $opacity_top: 0, $pos_top: 0%, $bottom_color:#000000, $opacity: 1, $pos_bot: 100%) {
+  background: $top_color; /* Old browsers */
+  background: -moz-radial-gradient($pos_x $pos_y, ellipse cover, rgba($top_color, $opacity_top) $pos_top, rgba($bottom_color, $opacity) $pos_bot); /* FF3.6+ */
+  background: -webkit-radial-gradient($pos_x $pos_y, ellipse cover rgba($top_color, $opacity_top) $pos_top, rgba($bottom_color, $opacity) $pos_bot); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at $pos_x $pos_y,  rgba($top_color, $opacity_top) $pos_top, rgba($bottom_color, $opacity) $pos_bot); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top_color', endColorstr='$bottom_color',GradientType=1 ); /* IE6-9 */
+}
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//--------------------------------------------------------------------------------
+//MEDIA QUERIES
+//--------------------------------------------------------------------------------
+@mixin mquery($size) {
+  @if $size == large {
+    @media (min-width: 1200px) {
+      @content; 
+    }
+  }
+  @else if $size == medium {
+    @media (min-width: 992px) {
+      @content; 
+    }
+  }
+  @else if $size == small {
+    @media (min-width: 768px) {
+      @content;       
+    }
+  }
+  @else if $size == xsmall {
+    @media (min-width: 576px) {
+      @content;       
+    }
+  }
+  @else if $size == xxsmall {
+    @media (max-width: 480px) {
+      @content;       
+    }
+  }
+  @else if $size == laptop {
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+      @content;       
+    }
+  }
+}
+
+@mixin max-media($size) {
+  @media (max-width: $size) {
+    @content; 
+  }
+  
+}
+
+//--------------------------------------------------------------------------------
+//GRID SYSTEM
+//--------------------------------------------------------------------------------
+@mixin grid_col($col, $grid_col) {
+  width: percentage($col / $grid_col);
+}
+@mixin grid_gen($gap: $grid_gap, $mobile_view: false) {
+  @if $mobile_view {
+    padding-left: $gap / 4;
+    padding-right: $gap / 4;
+  }
+  @else {
+    padding-left: $grid_gap / 2;
+    padding-right: $grid_gap / 2;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+/*RESPONSIVE BOX / ASPEC RATIO*/
+/*--------------------------------------------------------------------------------*/
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+} 
+
+//--------------------------------------------------------------------------------
+//JUSTIFY CONTENT
+//--------------------------------------------------------------------------------
+@mixin alignment-content($align) {
+  -moz-box-align: center;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: justify;
+  align-items: $align;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+// --------------------------------------------------------------------------------
+// Font Face
+// --------------------------------------------------------------------------------
+@mixin includeFont($fontFamilyName, $fileName, $weight: normal, $style: normal) {
+@font-face {
+    font-family: $fontFamilyName;
+    font-weight: $weight;
+    font-style: $style;
+        //IE9 Compatibility Mode
+        src: url('../fonts/fontbase/#{$fileName}.eot');
+        //IE6-IE8
+        src: url('../fonts/fontbase/#{$fileName}.eot?#iefix') format('embedded-opentype'),
+             //Super Modern Browsers
+             url('../fonts/fontbase/#{$fileName}.woff2') format('woff2'),
+             // //Majority of Modern Browsers
+             url('../fonts/fontbase/#{$fileName}.woff') format('woff'),
+             //Safari, Android, iOS
+             url('../fonts/fontbase/#{$fileName}.ttf') format('truetype');
+    }
+}
+
+
+//placeholder
+@mixin placeholder{
+  &::-webkit-input-placeholder{
+    @content;
+  }
+  &:-moz-placeholder{
+    @content;
+  }
+  &::-moz-placeholder{
+    @content;
+  }
+  &:-ms-input-placeholder{
+    @content;
+  }
+}
+  
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+//PRESET
+%_img-wfull {
+  width: 100%;
+  height: auto;
+  max-width:none;
+}
+
+%_img-allfull {
+  width: 100%;
+  height: 100%;
+  max-width:none;
+}
+
+%_abs-right {
+  position: absolute;
+  right:0;
+  top:0;
+  left: initial;
+}
+
+%_abs-left {
+  position: absolute;
+  left:0;
+  top:0;
+  right: initial;
+}
+
+
+@mixin img-wfull() {
+
+    img {
+      @extend %_img-wfull;
+    }
+}
+
+@mixin img-allfull() {
+
+    img {
+      @extend %_img-allfull;
+    }
+}
+
+
+@mixin imgcircle(){
+
+    @include rounded-corner(50%);
+    overflow: hidden;
+
+    @include img-allfull();
+
+}
+
+@mixin roundshadow() {
+  @include box-shadow(1px 1px 4px 0 rgba(0, 0, 0, 0.2));
+  @include rounded-corner(10px);
+  
+}
+
+
+

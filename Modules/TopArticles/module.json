@@ -1,0 +1,16 @@
+{
+    "name": "TopArticles",
+    "alias": "toparticles",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\TopArticles\\Providers\\TopArticlesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

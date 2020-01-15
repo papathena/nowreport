@@ -1,0 +1,43 @@
+#!/bin/sh
+#CLI WEB:
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=all'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=news'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=sport'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=finance'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=inet'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=oto'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=hot'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=wolipop'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=health'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=travel'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=food'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=web&channel=x'
+
+#CLI ANDROID:
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=all'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=news'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=sport'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=finance'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=inet'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=oto'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=hot'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=wolipop'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=health'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=travel'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=food'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=android&channel=x'
+
+#CLI IOS:
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=all'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=news'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=sport'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=finance'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=inet'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=oto'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=hot'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=wolipop'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=health'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=travel'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=food'
+/usr/bin/curl -XGET 'https://nowreport.detik.com/ga/toparticles/pushmonthlypull?platform=ios&channel=x'
+

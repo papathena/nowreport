@@ -1,0 +1,36 @@
+.btn {
+	display: inline-block;
+	outline: none;
+	border:none;
+	padding: 10px 25px;
+	@include rounded-corner(20px);
+	font-size:14px;
+	background: $platinum;
+	color:$manate;
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+	
+	&.btn-full {
+		display: block;
+		width: 100%;
+		max-width:200px;
+		text-align:center;
+	}
+	
+	&.btn-long {
+		padding: 10px 55px;
+	}
+
+}
+
+$color_list: ('danger',$tdanger) ('warning',$twarning-sc) ('info',$tinfo) ('primary',$tprimary) ('primary-alt',$tprimary-alt);
+
+@each $cname, $ccolor in $color_list {
+	//btn
+	.btn.btn-#{$cname} {
+		background: $ccolor;
+		color:white;
+
+	}
+}

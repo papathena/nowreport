@@ -1,0 +1,429 @@
+.rdinput {
+	padding: 15px 20px;
+	border: 1px solid $platinum;
+	outline:none;
+	@include rounded-corner(30px);
+	font-size:16px;
+	min-width:230px;
+	background: white;
+
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+
+	@include max-media(768px) {
+		margin-bottom: 10px;
+		width: 100%;
+		max-width:320px;
+	}
+}
+
+.rdselect {
+	padding: 15px 20px;
+	border: 1px solid $platinum;
+	outline:none;
+	@include rounded-corner(30px);
+	font-size:16px;
+	min-width:230px;
+	appearance: none;
+	-webkit-appearance: none;
+	background: white;
+	padding-right: 50px;
+	-moz-appearance: none;
+
+	@include max-media(768px) {
+		margin-bottom: 10px;
+	}
+}
+
+.rdrop {
+	padding: 15px 20px;
+	border: 1px solid $platinum;
+	outline:none;
+	@include rounded-corner(30px);
+	font-size:16px;
+	min-width:200px;
+	appearance: none;
+	-webkit-appearance: none;
+	background: white;
+	padding-right: 50px;
+	position: relative;
+	cursor:pointer;
+	font-weight: normal;
+    color: initial;
+    -moz-appearance: none;
+
+    @include max-media(768px) {
+		margin-bottom: 10px;
+	}
+
+	&__opt {
+		background: white;
+		@include rounded-corner(10px);
+		padding: 20px;
+		position: relative;
+		width: 93%;
+		z-index: 1000;
+		border: 1px solid $platinum;
+
+		@include max-media(768px) {
+			width: 100%;
+		}
+
+	}
+
+	&__count {
+		position: absolute;
+		right:50px;
+		font-weight:400;
+	}
+
+	&__act {
+		
+
+		left: 20px;
+		top: 55px;
+		height: 0;
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		position: absolute;
+		@include transition(.2s ease-in-out);
+
+		&.open {
+			height: auto;
+			max-height:1500px;
+		}
+		@include max-media(768px) {
+			left: 0;	
+		}
+	}
+
+	&__check {
+		opacity: 0;
+		position: absolute;
+		left:0;
+	}
+
+	&__item {
+
+		&-title {
+			display: block;
+			// padding-bottom: 30px;
+		}
+		label {
+			position: relative;
+			display: block;
+			cursor:pointer;
+			font-size: 14px;
+			padding: 5px 0;
+			font-weight:700;
+
+			input {
+				&:checked {
+					+ span.checkmark {
+						color:$tinfo;
+					}
+				}
+			}
+
+			.checkmark {
+				right: 0;
+				top:10;
+				color:$platinum;
+				position: absolute;
+				font-size:20px;
+				@include transition(.2s ease-in-out);
+			}
+		}
+	}
+
+	&__title {
+	    font-size: 14px;
+	    color: #a1a1a1;
+	    padding-bottom: 10px;
+	}
+}
+
+.sdrop {
+	padding: 15px 20px;
+	border: 1px solid $platinum;
+	outline:none;
+	@include rounded-corner(30px);
+	font-size:16px;
+	min-width:200px;
+	appearance: none;
+	-webkit-appearance: none;
+	background: white;
+	padding-right: 50px;
+	position: relative;
+	cursor:pointer;
+	font-weight: normal;
+    color: initial;
+    -moz-appearance: none;
+
+	&__opt {
+		background: white;
+		@include rounded-corner(10px);
+		position: relative;
+		width: 93%;
+		z-index: 1000;
+		border: 1px solid $platinum;
+		padding: 10px 0;
+
+	}
+
+	&__item {
+		padding: 0px 20px;
+
+		&:hover {
+			background: $munsell;
+		}
+	}
+
+	&__count {
+		position: absolute;
+		right:50px;
+		font-weight:400;
+	}
+
+	&__act {
+		left: 20px;
+		top: 55px;
+		height: 0;
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		position: absolute;
+		@include transition(.2s ease-in-out);
+
+		&.open {
+			height: auto;
+			max-height:500px;
+		}
+	}
+
+	&__check {
+		opacity: 0;
+		position: absolute;
+		left:0;
+	}
+
+	&__item {
+
+		&-title {
+			display: block;
+			// padding-bottom: 30px;
+		}
+		label {
+			position: relative;
+			display: block;
+			cursor:pointer;
+			font-size: 14px;
+			padding: 5px 0;
+			font-weight:700;
+
+			input {
+				&:checked {
+					+ span.checkmark {
+						color:$tinfo;
+					}
+				}
+			}
+
+			.checkmark {
+				right: 0;
+				top:10;
+				color:$platinum;
+				position: absolute;
+				font-size:20px;
+				@include transition(.2s ease-in-out);
+			}
+		}
+	}
+
+	&__title {
+	    font-size: 14px;
+	    color: #a1a1a1;
+	    padding-bottom: 10px;
+	}
+}
+
+
+.form {
+
+	&__inline {
+		margin: 0 -5px;
+		width: 100%;
+		&-item {
+			float:left;
+			padding: 5px;
+			// min-width:250px;
+			position: relative;
+
+			@include max-media(768px) {
+				display: block;
+				width: 100% !important;
+			}
+		}
+
+	}
+
+	&__wrap {
+		position: relative;
+		display: block;
+		padding: 5px 0;
+	}
+
+	&__block {
+		margin: 0 -5px;
+		width: 100%;
+
+		&.form__block--half {
+			width: 50%;
+			max-width:500px;
+
+			@include max-media(768px) {
+				width: 100%;
+				
+			}
+		}
+		&-item {
+			display: block;
+			padding: 5px;
+			margin-bottom: 20px;
+			float:none;
+			// min-width:250px;
+			position: relative;
+		}
+		&-label {
+			display: block;
+			padding-bottom: 5px;
+			font-weight:700;
+			font-size: 16px;
+		}
+
+	}
+
+	&__icon {
+		position: absolute;
+		font-size: 30px;
+		color:$manate;
+		top: 9px;
+		left: 10px;
+
+		&.onright {
+			left:initial;
+			right: 10px;
+		}
+	}
+
+
+	&__vertical {
+		width: 100%;
+		position: relative;
+		margin-bottom: 40px;
+
+		// max-width:800px;
+
+		&.onchild {
+			&:last-child {
+				margin-bottom: 0;
+			}
+			padding-left: 40px;
+			.form__vertical-title {
+				position: absolute;
+				width: 70px;
+				font-weight:700;
+				font-size:14px;
+				overflow:hidden;
+				top:50%;
+				left: 30px;
+				@include transform(translate(0,-50%));
+
+			}
+
+			.form__vertical-box {
+				padding-left: calc(70px);
+				width: 100%;
+				
+			}
+		}
+
+		&.onhalf {
+			width: 50%;
+			max-width:800px;
+		}
+
+		&-title {
+			position: absolute;
+			width: 100px;
+			font-weight:700;
+			font-size:16px;
+			overflow:hidden;
+			top:50%;
+			left: 0;
+			@include transform(translate(0,-50%));
+
+		}
+
+		&-box {
+			padding-left: calc(100px);
+			width: 100%;
+
+		}
+
+		label {
+			font-size:13px;
+			display: block;
+			color:$manate;
+			position: absolute;
+			top:-10px;
+		}
+	}
+
+}
+
+
+.df {
+
+	&__input {
+		padding: 10px 10px;
+		border: 1px solid transparent;
+		outline:none;
+		@include rounded-corner(10px);
+		@include box-shadow(0px 2px 4px 0px rgba(209, 209, 209, 0.5));
+		font-size:14px;
+		background: white;
+		width: 100%;
+		// color:$manate;
+		@include placeholder() {
+			color:$lightgrey;
+		};
+		font-weight:700;
+
+		&.iconic {
+			padding-left: 45px;
+		}
+	}
+	&__select {
+		padding: 10px 10px;
+		border: 1px solid transparent;
+		outline:none;
+		@include rounded-corner(10px);
+		@include box-shadow(0px 2px 4px 0px rgba(209, 209, 209, 0.5));
+		font-size:14px;
+		background: white;
+		width: 100%;
+		display: block;
+		-webkit-appearance: none;
+		appearance: none;
+		color:$manate;
+
+
+		&.iconic {
+			padding-left: 45px;
+		}
+	}
+}
+
